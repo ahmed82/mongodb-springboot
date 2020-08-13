@@ -22,7 +22,7 @@ public class IntenseController {
 	@Autowired
 	IntenseRepository intenseRepository;
 	
-	@PostMapping("/addIntense")
+	@PostMapping("/intense")
 	public ResponseEntity<?> addIntense(@RequestBody Intense intense) {
 		intenseRepository.save(intense);
 		//return "Added Intense with id "+ intense.getId();
